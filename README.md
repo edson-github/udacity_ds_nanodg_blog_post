@@ -1,2 +1,47 @@
-# udacity_ds_nanodg_blog_post
-Repo containing the EDA and ML work for a data science blog post
+# DS Nanodegree Project: Write a Data Science Blog Post
+## Description
+The goal of writing a data science blog post is two make use of the CRISP-DM methodology.
+CRISP-DM stands for cross industry standard process for data mining. The main steps components are:
+* Business Understanding
+* Data Understanding
+* Data Preparation
+* Modeling
+* Evaluation
+* Deployment
+
+For the blog post I've decided to analyze and answer questions related to the [Olist marketplace datasets](https://www.kaggle.com/olistbr/brazilian-ecommerce) found in Kaggle. The questions are the following:
+
+1. Which product categories contribute the most to total products purchased?
+2. From which cities are most products being bought from?
+3. Is there any seasonality to the number of orders placed?
+
+The exploratory data analysis that led to these questions, and their respective answers are found in `eda.ipynb` under the `olist_ecommerce_eda` directory. No modelling or predictive analytics was done so the last three steps of CRISP-DM will not be relevant. Below a brief decription of all relevant directories and files.
+
+## Directories and Files
+```
+.
+├── README.md
+└── olist_ecommerce_eda
+    ├── eda.ipynb
+    ├── graphs_tables
+    │   ├── city_product_count_summary_statistics_table.png
+    │   ├── city_products_count_cdf.png
+    │   ├── daily_orders_autocorrelation_plot.png
+    │   ├── dfuller_pvals_table.png
+    │   ├── monthly_products.png
+    │   ├── orders_daily_plot.png
+    │   ├── top10_categories_monthly_share_products_heatmap.png
+    │   ├── top10_cities_monthly_share_products_heatmap.png
+    │   ├── top10_cities_products_table.png
+    │   ├── top10_product_categories_products_table.png
+    │   └── weekday_orders_plot.png
+    ├── olist_customers_dataset.csv
+    ├── olist_order_items_dataset.csv
+    ├── olist_orders_dataset.csv
+    ├── olist_products_dataset.csv
+    ├── olist_sellers_dataset.csv
+    └── product_category_name_translation.csv
+```
+
+* eda.ipynb: exploratory data analysis, covers business understanding, data understanding and data preparation.
+* 
