@@ -43,5 +43,16 @@ The exploratory data analysis that led to these questions, and their respective 
     └── product_category_name_translation.csv
 ```
 
-* eda.ipynb: exploratory data analysis, covers business understanding, data understanding and data preparation.
-* 
+* eda.ipynb: exploratory data analysis, covers business understanding, data understanding and data preparation from CRISP-DM methdology
+* tsa_olist.md: local markdown post
+* environment.yml: conda environment files with all dependencies, see Environment section for replication. 
+
+## Medium Blog Post
+Can be found [here](medium link) # TODO
+
+## Environment
+For those working with conda, you can find the full environment in the `environment.yml` file, the name is `py37_ml` 
+* To replicate, run `conda env create -f environment.yml`
+* To activate, run `conda activate py37_ml`
+
+
