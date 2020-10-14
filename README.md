@@ -9,13 +9,19 @@ CRISP-DM stands for cross industry standard process for data mining. The main st
 * Evaluation
 * Deployment
 
-For the blog post I've decided to analyze and answer questions related to the [Olist marketplace datasets](https://www.kaggle.com/olistbr/brazilian-ecommerce) found in Kaggle. The questions are the following:
+
+## Motivation
+For the blog post I've decided to analyze and answer questions related to the [Olist marketplace datasets](https://www.kaggle.com/olistbr/brazilian-ecommerce) found in Kaggle. 
+I've always been interested in understanding ecommerce companies better, so I wanted to figure out the following questions: 
 
 1. Which product categories contribute the most to total products purchased?
 2. From which cities are most products being bought from?
 3. Is there any seasonality to the number of orders placed?
 
-The exploratory data analysis that led to these questions, and their respective answers are found in `eda.ipynb` under the `olist_ecommerce_eda` directory. No modelling or predictive analytics was done so the last three steps of CRISP-DM will not be relevant. Below a brief decription of all relevant directories and files.
+The exploratory data analysis around these questions, and their respective answers are found in `eda.ipynb` under the `olist_ecommerce_eda` directory. 
+No modelling or predictive analytics was done so the last three steps of CRISP-DM will not be relevant. 
+
+Below a brief description of all relevant directories and files.
 
 ## Directories and Files
 ```
@@ -28,10 +34,14 @@ The exploratory data analysis that led to these questions, and their respective 
 |   |   |-- city_product_count_summary_statistics_table.png
 |   |   |-- city_products_count_cdf.png
 |   |   |-- daily_orders_autocorrelation_plot.png
+|   |   |-- daily_products_sold_plot.png
 |   |   |-- dfuller_pvals_table.png
 |   |   |-- monthly_products_plot.png
+|   |   |-- monthly_total_products_table.png
 |   |   |-- orders_daily_plot.png
+|   |   |-- top10_categories_monthly_abs_products_heatmap.png
 |   |   |-- top10_categories_monthly_share_products_heatmap.png
+|   |   |-- top10_cities_monthly_abs_products_heatmap.png
 |   |   |-- top10_cities_monthly_share_products_heatmap.png
 |   |   |-- top10_cities_products_table.png
 |   |   |-- top10_product_categories_products_table.png
