@@ -81,7 +81,7 @@ to 2.7% each. What about the rest of cities?
 
 city_product_count_summary_statistics_table.png
 
-The above table has some summary statistics for the distribution of monthly products sold per city per month. We can see that the 
+The above table has some summary statistics for all observations of monthly products sold across all cities. We can see that the 
 the 75th percentile of monthly products sold per city in this dataset is **1**. This is a very strong indication that cities 
 beyond the top 10 contribute a high amount of products sold as a group but not individually.
 

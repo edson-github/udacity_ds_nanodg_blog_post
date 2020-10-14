@@ -62,7 +62,7 @@ Below a brief description of all relevant directories and files.
 * `environment.yml`: conda environment files with all dependencies, see Environment section for replication. 
 
 ## Medium Blog Post
-Can be found [here](medium link) # TODO
+Can be found [here](https://juloi.medium.com/time-series-analysis-of-brazilian-marketplace-olist-whats-to-learn-c85f24987fac) 
 
 ## Environment
 For those working with conda, you can find the full environment in the `environment.yml` file, the name is `py37_ml` 
