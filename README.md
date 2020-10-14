@@ -20,32 +20,36 @@ The exploratory data analysis that led to these questions, and their respective 
 ## Directories and Files
 ```
 .
-├── README.md
-└── olist_ecommerce_eda
-    ├── eda.ipynb
-    ├── graphs_tables
-    │   ├── city_product_count_summary_statistics_table.png
-    │   ├── city_products_count_cdf.png
-    │   ├── daily_orders_autocorrelation_plot.png
-    │   ├── dfuller_pvals_table.png
-    │   ├── monthly_products.png
-    │   ├── orders_daily_plot.png
-    │   ├── top10_categories_monthly_share_products_heatmap.png
-    │   ├── top10_cities_monthly_share_products_heatmap.png
-    │   ├── top10_cities_products_table.png
-    │   ├── top10_product_categories_products_table.png
-    │   └── weekday_orders_plot.png
-    ├── olist_customers_dataset.csv
-    ├── olist_order_items_dataset.csv
-    ├── olist_orders_dataset.csv
-    ├── olist_products_dataset.csv
-    ├── olist_sellers_dataset.csv
-    └── product_category_name_translation.csv
+|-- README.md
+|-- environment.yml
+|-- olist_ecommerce_eda
+|   |-- eda.ipynb
+|   |-- graphs_tables
+|   |   |-- city_product_count_summary_statistics_table.png
+|   |   |-- city_products_count_cdf.png
+|   |   |-- daily_orders_autocorrelation_plot.png
+|   |   |-- dfuller_pvals_table.png
+|   |   |-- monthly_products_plot.png
+|   |   |-- orders_daily_plot.png
+|   |   |-- top10_categories_monthly_share_products_heatmap.png
+|   |   |-- top10_cities_monthly_share_products_heatmap.png
+|   |   |-- top10_cities_products_table.png
+|   |   |-- top10_product_categories_products_table.png
+|   |   `-- weekday_orders_plot.png
+|   |-- olist_customers_dataset.csv
+|   |-- olist_order_items_dataset.csv
+|   |-- olist_orders_dataset.csv
+|   |-- olist_products_dataset.csv
+|   |-- olist_sellers_dataset.csv
+|   `-- product_category_name_translation.csv
+`-- tsa_olist.md
+
 ```
 
-* eda.ipynb: exploratory data analysis, covers business understanding, data understanding and data preparation from CRISP-DM methdology
-* tsa_olist.md: local markdown post
-* environment.yml: conda environment files with all dependencies, see Environment section for replication. 
+* `olist_ecommerce_eda/eda.ipynb`: exploratory data analysis, covers business understanding, data understanding and data preparation from CRISP-DM methdology
+* `olist_ecommerce_eda/graphs_tables`: PNG files of graphs and tables used for the blog post.
+* `tsa_olist.md`: local markdown blog post, similar will be published in medium.
+* `environment.yml`: conda environment files with all dependencies, see Environment section for replication. 
 
 ## Medium Blog Post
 Can be found [here](medium link) # TODO
@@ -55,4 +59,21 @@ For those working with conda, you can find the full environment in the `environm
 * To replicate, run `conda env create -f environment.yml`
 * To activate, run `conda activate py37_ml`
 
+If you're using any other environment management system, the following are the main packages to install, latest versions should work:
 
+```
+pandas
+numpy
+statsmodels
+matplotlib
+seaborn
+fbprophet
+dataframe_image
+holidays
+```
+
+## Opening the Notebook
+Run the following in the terminal `jupyter notebook ` or `jupyter lab` if you have it installed.
+
+## Acknowledgements
+Thanks to [Olist](https://olist.com) for making the datasets available in [Kaggle](https://kaggle.com/).
